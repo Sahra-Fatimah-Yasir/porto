@@ -1,0 +1,209 @@
+/* skill.css */
+
+/* Styling for body and general sections */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  background-color: #f4f4f9;
+  color: #2d2733;
+}
+
+.body_section {
+  padding: 3% 5% 1%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #3498db;
+}
+
+/* Custom font Lovely Home */
+@font-face {
+  font-family: "Lovely Home";
+  src: local('Lovely Home'),
+      url("Image/LovelyHome-9aBZ.ttf") format('truetype');
+}
+
+/* Navbar styling */
+.navbar-brand {
+  font-family: "Lovely Home";
+  font-size: 35px;
+  font-weight: bold;
+  color: #351458;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #3498db;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #ffffff, #f0f0f5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #2d2733;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #ffffff;
+  background-color: #3498db;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(0, 0, 0, 0.7)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+      background-color: #ffffff;
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem 0;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+      margin: 0.25rem 0;
+  }
+}
+
+/* Anchor tag styling */
+.headerachor {
+  color: black;
+  margin: 0 5px;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.headerachor:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styling for main skill section */
+.Section1 {
+  padding: 4% 0 3%;
+}
+
+/* Styling for skill bars */
+#SkillBox {
+  width: 95%;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Skill-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.SkillBar {
+  position: relative;
+  height: 60px; /* Adjust height to accommodate icon and text */
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #e0e0e0; /* Default background color */
+  overflow: hidden;
+}
+
+.Skill-Area {
+  display: inline-block;
+  width: 60px; /* Adjust width to accommodate icon */
+  height: 60px; /* Adjust height to match .SkillBar height */
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.percentage {
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Individual skill bars with different colors */
+#Skill-HTML .SkillBar {
+  background-color: #6a1b9a; /* Purple color */
+}
+
+#Skill-CSS .SkillBar {
+  background-color: #039be5; /* Blue color */
+}
+
+#Skill-Python .SkillBar {
+  background-color: #4caf50; /* Green color */
+}
+
+#Skill-JS .SkillBar {
+  background-color: #fb8c00; /* Orange color */
+}
+
+#Skill-C .SkillBar {
+  background-color: #d32f2f; /* Red color */
+}
+
+#Skill-Cplus .SkillBar {
+  background-color: #7b1fa2; /* Dark purple color */
+}
+
+#Skill-SQL .SkillBar {
+  background-color: #ffca28; /* Yellow color */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 950px) {
+  body,
+  html {
+      text-align: center;
+      font-size: 16px;
+      line-height: normal;
+  }
+}
+
+/* Footer styling */
+footer {
+  padding-top: 2%;
+  color: #868e96;
+  text-align: center;
+  background-color: #f0f0f5;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}

@@ -1,0 +1,246 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  background-color: #f4f4f9;
+  color: #2d2733;
+}
+
+.body_section {
+  padding: 3% 5% 1%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #3498db;
+}
+
+@font-face {
+  font-family: "Lovely Home";
+  src: local('Lovely Home'), 
+       url("Image/LovelyHome-9aBZ.ttf") format('truetype');
+}
+
+.navbar-brand {
+  font-family: "Lovely Home";
+  font-size: 35px; /* Reduced font size */
+  font-weight: bold;
+  color: #351458;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #3498db;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #ffffff, #f0f0f5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem; /* Reduced padding */
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #2d2733;
+  font-size: 0.9rem; /* Reduced font size */
+  margin: 0 0.5rem; /* Reduced margin */
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 0.25rem 0.5rem; /* Reduced padding */
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #ffffff;
+  background-color: #3498db;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(0, 0, 0, 0.7)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0; /* Reduced padding */
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    margin: 0.25rem 0; /* Reduced margin */
+  }
+}
+
+.headerachor {
+  color: black;
+  margin: 0 5px; /* Reduced margin */
+  font-size: 20px; /* Reduced font size */
+  transition: background-color 0.3s ease;
+}
+
+.headerachor:hover {
+  background-color: #f1f1f1;
+}
+
+  #contact{
+      padding: 20px 20px 10px;
+  }
+ 
+
+  .first-section{
+      text-align: center;
+  }
+
+  .Profilepic{
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: 10px solid;
+    border-color: #6c63ff;
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.897);;
+}
+
+  .context{
+    text-align: center;
+    padding-top: 20px;
+}
+
+  h1{
+      font-weight: bold;
+  }
+   
+  p{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color:#868e96;
+  }
+
+  .ico{
+    padding: 0;
+  }
+
+  .icon{
+      text-decoration: none;
+      list-style: none;
+      margin: 0 7px 0;
+      display: inline;
+      
+  }
+
+  .github{color: gray;}
+  .instagram{
+    color: #fb3958;
+  }
+  .linkedin{
+    color: #0e76a8;
+  }
+  .google{
+    color: #ea4335;
+  }
+
+  .github:hover , .instagram:hover , .google:hover , .linkedin:hover{
+      color: black;
+  }
+
+  .second-section{
+    text-align: center;
+  }
+
+  .connect{
+    font-weight: normal;
+    margin-top:30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color:white;
+    background-color: #437a9e;
+    padding: 10px 30px 10px;
+    margin-left: 12%;
+    margin-right: 12%;
+    border-radius: 10px;
+  }
+
+  .connection{
+    margin-top: 30px;
+    margin-left: 290px;
+    width:100%;
+    height:100%;
+    margin-bottom: 10px;
+  }
+
+  .sayhello{
+     margin-top: 15px;
+     border:1px solid #437a9e;
+     border-radius: 10px;
+     padding: 10px 20px 10px;
+  }
+
+  .sayhello:hover{
+    text-align: none;
+    text-decoration: none;
+    color:white;
+    background-color: #437a9e;
+  }
+
+  span.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate(  0.0deg) }
+     10% { transform: rotate(-10.0deg) }
+     20% { transform: rotate( 12.0deg) }
+     30% { transform: rotate(-10.0deg) }
+     40% { transform: rotate(  9.0deg) }
+     50% { transform: rotate(  0.0deg) }
+    100% { transform: rotate(  0.0deg) }
+  }
+
+ 
+  @media only screen and (max-width : 950px){
+
+    body,html{
+      text-align: center;
+      font-size: 16px;
+      line-height: normal;
+    }
+    h1{
+      font-size: 30px;
+    }
+    .connect{
+      font-size: 20px;
+    }
+    .connection{
+      margin-left: 0px;
+    }
+
+  }
+
+  footer{
+    padding-top: 2%;
+    color: #868e96;
+    text-align: center;
+  }
